@@ -21,7 +21,7 @@ const About: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/TEQUILA_GHOST_54.jpg)'
+            backgroundImage: 'url(/TEQUILA_GHOST_42.jpg)'
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900 via-primary-900/80 to-transparent" />
