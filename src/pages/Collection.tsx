@@ -77,8 +77,8 @@ const Collection: React.FC = () => {
       {/* Header */}
       <section className="px-6 mb-16">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-100 mb-4 mt-16">
-           The Privada Collection
+          <h1 className="font-serif text-4xl md:text-5xl font-bold mb-4 mt-16">
+            <span className="text-gold-500 uppercase tracking-[0.12em]">PRIVADA</span> <span className="text-primary-100">Barrels</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-100/80 max-w-3xl mx-auto leading-relaxed">
             <span className="font-body font-light tracking-[0.05em]">Current offerings from Felipe's private archive</span>

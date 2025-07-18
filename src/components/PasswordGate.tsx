@@ -10,6 +10,9 @@ const PasswordGate: React.FC<PasswordGateProps> = ({ onAuthenticate }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // To change the password, edit the string in the handleSubmit function below:
+    // if (password.toLowerCase() === 'entrada') { ... }
+    // Change 'entrada' to your desired password.
     if (password.toLowerCase() === 'entrada') {
       onAuthenticate();
     } else {

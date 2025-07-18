@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
     e.preventDefault();
     
     // Create mailto link
-    const subject = encodeURIComponent('Privada Barrel Inquiry');
+    const subject = encodeURIComponent('PRIVADA Barrel Inquiry');
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
@@ -43,11 +43,11 @@ const Contact: React.FC = () => {
       {/* Header */}
       <section className="px-6 mb-16">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-100 mb-8">
-            Request Access to Privada
+          <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-100 mb-8 mt-16">
+            Request Access to PRIVADA
           </h1>
           <p className="text-lg md:text-xl text-primary-100/80 leading-relaxed">
-            <span className="font-body font-light tracking-[0.05em]">Interested in our exclusive barrel collection? Send us your inquiry and we'll be in touch.</span>
+            Send us your inquiry and we'll be in touch.
           </p>
         </div>
       </section>
@@ -132,7 +132,7 @@ const Contact: React.FC = () => {
 
       {/* Contact Info */}
       <section className="px-6 mt-16">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-md mx-auto text-center">
           <div className="bg-primary-800 border border-primary-700 p-8">
             <h3 className="font-serif text-xl font-bold text-primary-100 mb-4">
               Direct Contact

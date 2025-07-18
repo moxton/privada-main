@@ -15,7 +15,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="pt-24 pb-16">
+    <div className="pb-16">
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center py-8">
         <div 
@@ -28,7 +28,7 @@ const About: React.FC = () => {
         
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary-100 mb-8">
-            The Story Behind Privada
+            Our Story
           </h1>
         </div>
       </section>
@@ -36,26 +36,19 @@ const About: React.FC = () => {
       {/* The Discovery */}
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary-100 mb-12 text-center">
-            The Discovery
-          </h2>
-          
           <div className="prose prose-lg prose-invert max-w-none">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-gold-500 mb-8">
+              We believe tequila deserves the same respect as the world’s finest bourbons, cognacs, and scotches.
+            </h2>
             <p className="text-lg md:text-xl text-primary-100/80 leading-relaxed mb-8">
-              One night, while tasting through Felipe's cellar, David Gordon took a sip. 
-              The liquid was unlike anything he had experienced—complex, layered, with 
-              a depth that could only come from years of patient aging in the finest oak.
+              Felipe, our master tequilero, has spent years perfecting his private barrel program - a hidden stash of extra añejos aged with extraordinary care.
             </p>
-            
             <p className="text-lg md:text-xl text-primary-100/80 leading-relaxed mb-8">
-              "Best añejo I've ever had," he said, setting down the glass with reverence.
+              One night, tasting through these barrels with Ghost Tequila’s CEO David Gordon, the idea took shape. “Best añejo I’ve ever had,” David said. They knew they had to share it - but only with those who appreciate tequila as much as they do.
             </p>
-            
-            <p className="text-lg md:text-xl text-primary-100/80 leading-relaxed">
-              They knew they had to share it—but only with those who would truly understand. 
-              This wasn't tequila for the masses. This was liquid history, bottled tradition, 
-              aged perfection that deserved respect.
-            </p>
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-gold-500 mt-8">
+              <span className="tracking-[0.12em]">PRIVADA</span> is that private reserve - now yours to savor.
+            </h2>
           </div>
         </div>
       </section>
@@ -63,8 +56,8 @@ const About: React.FC = () => {
       {/* Why Privada is Different */}
       <section className="py-24 px-6 bg-primary-800">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary-100 mb-16 text-center">
-            Why Privada is Different
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-16">
+            Why <span className="text-gold-500 uppercase tracking-[0.12em]">PRIVADA</span> is Different
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
