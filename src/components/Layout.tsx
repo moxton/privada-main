@@ -37,13 +37,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </Link>
           
           <div className="hidden md:flex space-x-8 items-center">
-            {navItems.map((item) => (
+            {navItems.map((item, idx) => (
               <Link
                 key={item.path}
                 to={item.path}
                 className={`font-nav text-sm font-light tracking-[0.12em] uppercase transition-colors duration-300 ${
+                  idx === 0 ? 'ml-6' : ''
+                } ${
                   location.pathname === item.path
-                    ? 'text-gold-500 border-b border-gold-500 pb-1'
+                    ? 'text-gold-500 border-b border-gold-500 pb-2'
                     : 'text-primary-100/80 hover:text-gold-500'
                 }`}
               >
