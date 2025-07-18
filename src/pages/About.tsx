@@ -25,9 +25,8 @@ const About: React.FC = () => {
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900 via-primary-900/80 to-transparent" />
-        
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary-100 mb-8">
+        <div className="absolute inset-0 flex items-center justify-center w-full h-full z-10">
+          <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary-100 text-center w-full">
             Our Story
           </h1>
         </div>

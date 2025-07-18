@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
       <section className="px-6 mb-16">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-100 mb-8 mt-16">
-            Request Access to PRIVADA
+            Request Access to <span className="text-gold-500 uppercase tracking-[0.12em]">PRIVADA</span>
           </h1>
           <p className="text-lg md:text-xl text-primary-100/80 leading-relaxed">
             Send us your inquiry and we'll be in touch.

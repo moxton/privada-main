@@ -52,7 +52,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             ))}
             <button
               onClick={handleLogout}
-              className="ml-8 px-4 py-2 text-xs font-semibold text-gold-500 border border-gold-500 rounded hover:bg-gold-500 hover:text-black transition-colors"
+              className="ml-8 font-nav text-sm font-light tracking-[0.12em] uppercase transition-colors duration-300 text-gold-500 border border-gold-500 rounded px-4 py-2 hover:bg-gold-500 hover:text-black"
             >
               Log Out
             </button>
@@ -71,7 +71,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </svg>
             </button>
             {menuOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-black border border-zinc-800 shadow-lg z-50 flex flex-col rounded-none">
+              <div className="absolute right-0 mt-32 w-48 bg-black border border-zinc-800 shadow-lg z-50 flex flex-col rounded-none">
                 {navItems.map((item) => (
                   <Link
                     key={item.path}
@@ -88,7 +88,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 ))}
                 <button
                   onClick={() => { setMenuOpen(false); handleLogout(); }}
-                  className="px-6 py-3 text-xs font-semibold text-gold-500 border-t border-gold-500 hover:bg-gold-500 hover:text-black transition-colors text-left"
+                  className="px-6 py-3 text-sm font-nav font-light tracking-[0.12em] uppercase transition-colors duration-300 text-gold-500 border-t border-gold-500 hover:bg-gold-500 hover:text-black text-left"
                 >
                   Log Out
                 </button>

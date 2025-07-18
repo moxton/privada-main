@@ -3,8 +3,8 @@ import { Briefcase, ShoppingBag, Truck, Bike } from 'lucide-react';
 
 const Bottling: React.FC = () => {
   return (
-    <div className="pb-16 bg-black min-h-screen">
-      <section className="px-6 mb-16 pt-32">
+    <div className="pb-16 bg-primary-900 min-h-screen">
+      <section className="px-6 mb-16 pt-16">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-100 mb-8 mt-16">
             Bottles & Service
