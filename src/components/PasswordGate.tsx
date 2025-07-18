@@ -38,7 +38,7 @@ const PasswordGate: React.FC<PasswordGateProps> = ({ onAuthenticate }) => {
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-md w-full">
           <div className="bg-black/70 px-8 py-10 mb-8 shadow-lg inline-block w-full">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary-100 mb-4 tracking-[0.18em]">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold text-gold-500 mb-4 tracking-[0.18em]">
               PRIVADA
             </h1>
             <p className="text-lg md:text-xl text-primary-100/90 mb-8 leading-relaxed font-light tracking-wider">

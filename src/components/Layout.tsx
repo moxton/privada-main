@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const navItems = [
     { path: '/home', label: 'Home' },
     { path: '/collection', label: 'PRIVADA Barrels' },
-    { path: '/bottling', label: 'PRIVADA Bottles & Service' },
+    { path: '/bottling', label: 'Bottles & Service' },
     { path: '/about', label: 'Our Story' },
     { path: '/contact', label: 'Contact' },
   ];
