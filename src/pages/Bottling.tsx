@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, ShoppingBag, Truck, Bike } from 'lucide-react';
+import { Briefcase, ShoppingBag, Truck, Bike, Award, Edit, Layers, Percent, Calendar, Package, FileText, Archive } from 'lucide-react';
 
 const Bottling: React.FC = () => {
   return (
@@ -15,17 +15,71 @@ const Bottling: React.FC = () => {
           <div className="flex flex-col md:flex-row bg-black/70 border border-gold-500 shadow-lg p-0 w-full overflow-hidden">
             <div className="flex-1 p-10 flex flex-col justify-center">
               <h2 className="font-serif text-2xl font-bold text-gold-500 mb-6 tracking-[0.12em]">PRIVADA Bottles</h2>
-              <ul className="text-primary-100/90 text-lg font-light list-disc pl-6 space-y-3">
-                <li className="pl-2">Every bottle embossed with "PRIVADA"</li>
-                <li className="pl-2">Option for personalized engraving / branding on bottle and on label</li>
-                <li className="pl-2">Single Barrel - individually numbered, never bulk blended</li>
-                <li className="pl-2">Bottled at 55%, not diluted to standard 40%</li>
-                <li className="pl-2">Age Statement - exact maturation to the day, not rounded by year</li>
-                <li className="pl-2">Bottling Date: Precise bottling date, not just the year</li>
-                <li className="pl-2">Barrel Type: Specific cask provenance - never generic</li>
-                <li className="pl-2">Provenance card included, with barrel-specific details, tasting notes, and certificate of authenticity</li>
-                <li className="pl-2">Bottles packaged in 6-pack wooden boxes</li>
-              </ul>
+              <div className="flex flex-col gap-4 w-full">
+                <div className="flex items-start gap-4">
+                  <Award className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Embossed Bottles</div>
+                    <div className="text-primary-100/90 text-sm font-light">Every bottle embossed with "PRIVADA"</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Edit className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Personalization</div>
+                    <div className="text-primary-100/90 text-sm font-light">Option for personalized engraving / branding on bottle and on label</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Layers className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Single Barrel</div>
+                    <div className="text-primary-100/90 text-sm font-light">Individually numbered, never bulk blended</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Percent className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Premium Strength</div>
+                    <div className="text-primary-100/90 text-sm font-light">Bottled at 55%, not diluted to standard 40%</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Calendar className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Age Statement</div>
+                    <div className="text-primary-100/90 text-sm font-light">Exact maturation to the day, not rounded by year</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Calendar className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Bottling Date</div>
+                    <div className="text-primary-100/90 text-sm font-light">Precise bottling date, not just the year</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Package className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Barrel Type</div>
+                    <div className="text-primary-100/90 text-sm font-light">Specific cask provenance - never generic</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <FileText className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Provenance Card</div>
+                    <div className="text-primary-100/90 text-sm font-light">Barrel-specific details, tasting notes, and certificate of authenticity</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Archive className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">Packaging</div>
+                    <div className="text-primary-100/90 text-sm font-light">Bottles packaged in 6-pack wooden boxes</div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="flex-1 min-h-[400px] bg-black flex items-center justify-center">
               <img src="/bottle1.png" alt="Privada bottle" className="w-full h-[32rem] max-h-[90vh] object-contain rounded shadow-inner" />
