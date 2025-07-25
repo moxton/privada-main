@@ -7,6 +7,7 @@ import Collection from './pages/Collection';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Bottling from './pages/Bottling.tsx';
+import RequestAccess from './pages/RequestAccess';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -79,6 +80,7 @@ function App() {
                   <PasswordGate onAuthenticate={handleAuthentication} />
               } 
             />
+            <Route path="/request-access" element={<RequestAccess />} />
             {isAuthenticated ? (
               <>
                 <Route path="/home" element={<Layout><Home /></Layout>} />

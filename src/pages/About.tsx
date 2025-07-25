@@ -3,7 +3,7 @@ import { Check, Award, Calendar, Droplets } from 'lucide-react';
 
 const About: React.FC = () => {
   const features = [
-    "Bottled at 55%, never diluted",
+    "Bottled at 55%",
     "Exact age statement to the day",
     "Specific barrel origin (Ex-Bordeaux, Ex-Cognac)",
     "Single barrel, hand-numbered",

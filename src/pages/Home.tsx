@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     {
       icon: <Droplets className="h-8 w-8 text-gold-500" />,
       title: "55% Bottled Strength",
-      description: "Not diluted to industry standard. Full-flavor, full-proof tequila."
+      description: "Not diluted to industry standard 40%. Full-flavor, 55% tequila."
     },
     {
       icon: <Clock className="h-8 w-8 text-gold-500" />,

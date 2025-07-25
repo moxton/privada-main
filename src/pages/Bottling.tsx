@@ -41,7 +41,7 @@ const Bottling: React.FC = () => {
                   <Percent className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
                   <div className="text-left">
                     <div className="font-serif text-base text-gold-500 font-semibold mb-1">Premium Strength</div>
-                    <div className="text-primary-100/90 text-sm font-light">Bottled at 55%, not diluted to standard 40%</div>
+                    <div className="text-primary-100/90 text-sm font-light">Bottled at 55%, not standard 40%</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

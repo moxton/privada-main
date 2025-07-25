@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface PasswordGateProps {
   onAuthenticate: () => void;
@@ -41,8 +42,11 @@ const PasswordGate: React.FC<PasswordGateProps> = ({ onAuthenticate }) => {
             <h1 className="font-serif text-5xl md:text-6xl font-bold text-gold-500 mb-4 tracking-[0.18em]">
               PRIVADA
             </h1>
-            <p className="text-lg md:text-xl text-primary-100/90 mb-8 leading-relaxed font-light tracking-wider">
+            <p className="text-lg md:text-xl text-primary-100/90 mb-4 leading-relaxed font-light tracking-wider">
               EXCLUSIVE TEQUILA BARRELS
+            </p>
+            <p className="font-serif text-2xl md:text-3xl text-gold-500 mb-8 font-light tracking-[0.2em]">
+              COMING SOON
             </p>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -64,6 +68,14 @@ const PasswordGate: React.FC<PasswordGateProps> = ({ onAuthenticate }) => {
                 Enter
               </button>
             </form>
+            <div className="mt-6">
+              <Link 
+                to="/request-access"
+                className="block w-full py-4 border-2 border-primary-100/30 text-primary-100 font-medium tracking-wider hover:border-primary-100 hover:bg-primary-100/10 transition-all duration-300 uppercase text-center"
+              >
+                Request Access
+              </Link>
+            </div>
           </div>
         </div>
       </div>
