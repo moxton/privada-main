@@ -1,17 +1,48 @@
 import React from 'react';
-import { Check, Award, Calendar, Droplets } from 'lucide-react';
+import { Clock, Droplets, Award, Grape, Shield, Edit, FileText } from 'lucide-react';
 
 const About: React.FC = () => {
   const features = [
-    "Bottled at 55%",
-    "Exact age statement to the day",
-    "Specific barrel origin (Ex-Bordeaux, Ex-Cognac)",
-    "Single barrel, hand-numbered",
-    "Bottling date included",
-    "100% Blue Weber Agave",
-    "Additive-free",
-    "Optional personalization (engraving, labeling)",
-    "Packaged in 6-pack wooden crates with provenance card"
+    {
+      icon: <Clock className="h-8 w-8 text-gold-500" />,
+      title: "4+ Year Maturation",
+      description: "Aged to the exact day, in rare oak casks with provenance."
+    },
+    {
+      icon: <Grape className="h-8 w-8 text-gold-500" />,
+      title: "100% de Agave",
+      description: "No glycerin, no coloring, no nonsense. Just agave, oak, and time."
+    },
+    {
+      icon: <Award className="h-8 w-8 text-gold-500" />,
+      title: "Single Barrel, Never Blended",
+      description: "Each bottle comes from one unique barrel. No mixing, no batching."
+    },
+    {
+      icon: <Award className="h-8 w-8 text-gold-500" />,
+      title: "Embossed Bottles",
+      description: "Every bottle embossed with \"PRIVADA\""
+    },
+    {
+      icon: <Edit className="h-8 w-8 text-gold-500" />,
+      title: "Personalization",
+      description: "Option for personalized engraving / branding on bottle and on label"
+    },
+    {
+      icon: <Droplets className="h-8 w-8 text-gold-500" />,
+      title: "Cask Strength",
+      description: "Bottled at 55%, not standard 40%"
+    },
+    {
+      icon: <FileText className="h-8 w-8 text-gold-500" />,
+      title: "Provenance Card",
+      description: "Barrel-specific details, tasting notes, and certificate of authenticity"
+    },
+    {
+      icon: <Shield className="h-8 w-8 text-gold-500" />,
+      title: "100% Additive Free",
+      description: "Just agave, water and wood - that's it"
+    }
   ];
 
   return (
@@ -52,57 +83,27 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Privada is Different */}
-      <section className="py-24 px-6 bg-primary-800">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-16">
-            Why <span className="text-gold-500 uppercase tracking-[0.12em]">PRIVADA</span> is Different
+      {/* What Makes Privada Different */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center text-primary-100 mb-16">
+            What Makes <span className="text-gold-500 uppercase tracking-[0.12em]">PRIVADA</span> Different
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-start space-x-4 p-4">
-                <div className="flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-gold-500" />
+              <div key={index} className="text-center p-6">
+                <div className="flex justify-center mb-6">
+                  {feature.icon}
                 </div>
-                <span className="text-primary-100/90 leading-relaxed">
-                  {feature}
-                </span>
+                <h3 className="font-serif text-xl font-semibold text-primary-100 mb-4">
+                  {feature.title}
+                </h3>
+                <p className="text-primary-100/80 leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Heritage Stats */}
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div className="p-6">
-              <Calendar className="h-12 w-12 text-gold-500 mx-auto mb-4" />
-              <div className="font-serif text-3xl font-bold text-primary-100 mb-2">25+</div>
-              <div className="text-primary-100/80">Years of Experience</div>
-            </div>
-            
-            <div className="p-6">
-              <Award className="h-12 w-12 text-gold-500 mx-auto mb-4" />
-              <div className="font-serif text-3xl font-bold text-primary-100 mb-2">100%</div>
-              <div className="text-primary-100/80">Blue Weber Agave</div>
-            </div>
-            
-            <div className="p-6">
-              <Droplets className="h-12 w-12 text-gold-500 mx-auto mb-4" />
-              <div className="font-serif text-3xl font-bold text-primary-100 mb-2">55%</div>
-              <div className="text-primary-100/80">Barrel Strength</div>
-            </div>
-            
-            <div className="p-6">
-              <div className="h-12 w-12 text-gold-500 mx-auto mb-4 flex items-center justify-center font-serif text-2xl font-bold">
-                ∞
-              </div>
-              <div className="font-serif text-3xl font-bold text-primary-100 mb-2">0</div>
-              <div className="text-primary-100/80">Additives</div>
-            </div>
           </div>
         </div>
       </section>

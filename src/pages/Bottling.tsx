@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, ShoppingBag, Truck, Bike, Award, Edit, Layers, Percent, Calendar, Package, FileText, Archive } from 'lucide-react';
+import { Briefcase, ShoppingBag, Truck, Bike, Award, Edit, Layers, Percent, Calendar, Package, FileText, Archive, Shield } from 'lucide-react';
 
 const Bottling: React.FC = () => {
   return (
@@ -77,6 +77,13 @@ const Bottling: React.FC = () => {
                   <div className="text-left">
                     <div className="font-serif text-base text-gold-500 font-semibold mb-1">Packaging</div>
                     <div className="text-primary-100/90 text-sm font-light">Bottles packaged in 6-pack wooden boxes</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Shield className="h-6 w-6 text-gold-500 mt-1 flex-shrink-0" />
+                  <div className="text-left">
+                    <div className="font-serif text-base text-gold-500 font-semibold mb-1">100% Additive Free</div>
+                    <div className="text-primary-100/90 text-sm font-light">Just agave, water and wood - that's it</div>
                   </div>
                 </div>
               </div>

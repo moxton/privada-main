@@ -1,14 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, Droplets, Award, Grape } from 'lucide-react';
+import { Clock, Droplets, Award, Grape, Shield, Edit, FileText } from 'lucide-react';
 
 const Home: React.FC = () => {
   const features = [
-    {
-      icon: <Droplets className="h-8 w-8 text-gold-500" />,
-      title: "55% Bottled Strength",
-      description: "Not diluted to industry standard 40%. Full-flavor, 55% tequila."
-    },
     {
       icon: <Clock className="h-8 w-8 text-gold-500" />,
       title: "4+ Year Maturation",
@@ -23,6 +18,31 @@ const Home: React.FC = () => {
       icon: <Award className="h-8 w-8 text-gold-500" />,
       title: "Single Barrel, Never Blended",
       description: "Each bottle comes from one unique barrel. No mixing, no batching."
+    },
+    {
+      icon: <Award className="h-8 w-8 text-gold-500" />,
+      title: "Embossed Bottles",
+      description: "Every bottle embossed with \"PRIVADA\""
+    },
+    {
+      icon: <Edit className="h-8 w-8 text-gold-500" />,
+      title: "Personalization",
+      description: "Option for personalized engraving / branding on bottle and on label"
+    },
+    {
+      icon: <Droplets className="h-8 w-8 text-gold-500" />,
+      title: "Cask Strength",
+      description: "Bottled at 55%, not standard 40%"
+    },
+    {
+      icon: <FileText className="h-8 w-8 text-gold-500" />,
+      title: "Provenance Card",
+      description: "Barrel-specific details, tasting notes, and certificate of authenticity"
+    },
+    {
+      icon: <Shield className="h-8 w-8 text-gold-500" />,
+      title: "100% Additive Free",
+      description: "Just agave, water and wood - that's it"
     }
   ];
 
